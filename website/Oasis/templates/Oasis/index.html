@@ -1,0 +1,642 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <!-- Site Metas -->
+   <title>Oasis Sports</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   
+
+   <!-- Site Icons -->
+   <link rel="shortcut icon" href="" type="image/x-icon" />
+   <link rel="apple-touch-icon" href="">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="{% static 'style.css' %}">
+   <!-- Colors CSS -->
+   <!-- ALL VERSION CSS -->	
+   <link rel="stylesheet" href="{% static 'css/versions.css' %}">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+   <!-- table  -->
+   <link rel="stylesheet" href="{% static 'css/table.css' %}">
+   <!-- font family -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   <!-- end font family -->
+   <link rel="stylesheet" href="{% static 'css/3dslider.css' %}" />
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+   <script src=" {% static 'js/3dslider.js' %}"></script>
+   
+   </head>
+   <body class="game" data-spy="scroll" data-target=".header">
+      <!-- LOADER -->
+      <div id="preloader">
+         <img class="preloader" src="{%static 'images/loading-img.gif' %}" alt="">
+      </div>
+      <!-- END LOADER -->
+      <section id="top">
+         <header>
+            
+                           
+                     <div class="col-md-6">
+                        <div class="right_top_section">
+                           <!-- social icon -->
+                           <!-- <ul class="social-icons pull-left">
+                              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                              <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                           </ul> -->
+                           <!-- end social icon -->
+                           <!-- button section -->
+                           <!-- <ul class="login">
+                              <li class="login-modal">
+                                 <a href="#" class="login"><i class="fa fa-user"></i>Login</a>
+                              </li>
+                              <li>
+                                 <div class="cart-option">
+                                    <a href="#"><i class="fa fa-shopping-cart"></i>Register</a>
+                                 </div>
+                              </li>
+                           </ul> -->
+                           <!-- end button section -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="header-bottom">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="full">
+                           <div class="main-menu-section">
+                              <div class="menu">
+                                 <nav class="navbar navbar-inverse">
+                                    <div class="navbar-header">
+                                       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                                       <span class="sr-only">Toggle navigation</span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                       </button>
+                                       <a class="navbar-brand" href="#">Menu</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse js-navbar-collapse">
+                                       <ul class="nav navbar-nav">
+                                          <div class="logo">
+                                             <a href="index.html"><img src="{% static 'images/logo.jpeg' %}" alt="#" style="width: 150px; height: 80px;"/></a>
+                                          </div>
+                                          <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                                          <li><a href="{% url 'about' %}">About Us</a></li>
+                                          <li><a href="{% url 'news'%}">News</a></li>
+                                          <li class="dropdown mega-dropdown">
+                                             <a href="match" class="dropdown-toggle" data-toggle="dropdown">Team<span class="caret"></span></a>				
+                                             <ul class="dropdown-menu mega-dropdown-menu">
+                                                <li class="col-sm-12">
+                                                   <ul>
+                                                      <li class="dropdown-header">Our Teams</li>
+                                                      <div id="menCollection" class="carousel slide" data-ride="carousel">
+                                                         <div class="carousel-inner">
+                                                            <div class="item active">
+                                                               <table class="table table-no-border">
+                                                            <thead>
+                                                               <tr>
+                                                            <th>Volley Ball</th>
+                                                            <th>Hand ball</th>
+                                                            <th>Basket ball</th>
+                                                            <th>Karate</th>
+                                                            <th>Min Foot Ball</th>
+                                                            <th>Hockey</th>
+                                                               </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td><a href="">Men Volley Ball</a></td>
+                                                                  <td><a href="">Men Hand Ball"></a></td>
+                                                                  <td><a href="">Men Basket Ball</a></td>
+                                                                  <td><a href="">Men Karate</a></td>
+                                                                  <td><a href="">Men Foot Ball</a></td>
+                                                                  <td><a href="">Men Hockey</a></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><a href="">Women Volley Ball</a></td>
+                                                                  <td><a href="">Women Hand Ball"></a></td>
+                                                                  <td><a href="">Women Basket Ball</a></td>
+                                                                  <td><a href="">Women Karate</a></td>
+                                                                  <td><a href="">Women Foot Ball</a></td>
+                                                                  <td><a href="">Women Hockey</a></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td><a href="">Women Volley Ball</a></td>
+                                                                  <td><a href="">Women Hand Ball"></a></td>
+                                                                  <td><a href="">Women Basket Ball</a></td>
+                                                                  <td><a href="">Women Karate</a></td>
+                                                                  <td><a href="">Women Foot Ball</a></td>
+                                                                  <td><a href="">Women Hockey</a></td>
+                                                               </tr>
+                                                            </tbody>
+                                                            
+                                                         </table>
+                                                         </div>
+                                                         
+                                                      </div>
+                                                       
+                                                   </ul>
+                                                </li>
+                                                
+                                             </ul>
+                                          </li> 
+                                          <li><a href="{% url 'blog'%}">Blog</a></li>
+                                          <li><a href="{% url 'contact' %}">contact</a></li>
+                                       </ul>
+                                    </div>
+                                    <!-- /.nav-collapse -->
+                                 </nav>
+                                 <div class="search-bar">
+                                    <div id="imaginary_container">
+                                       <div class="input-group stylish-input-group">
+                                          <input type="text" class="form-control"  placeholder="Search" >
+                                          <span class="input-group-addon">
+                                          <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>  
+                                          </span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div class="full-slider">
+            <div id="carousel-example-generic" class="carousel slide">
+               <!-- Indicators -->
+               <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+               </ol>
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner" role="listbox">
+                  <!-- First slide -->
+                  <div class="item active deepskyblue" data-ride="carousel" data-interval="5000">
+                     <div class="carousel-caption">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                           <div class="slider-contant" data-animation="animated fadeInRight">
+                              <h3>If you Don’t Practice<br>You <span class="color-yellow">Don’t Derserve</span><br>to win!</h3>
+                              
+                              <button class="btn btn-primary btn-lg">Read More</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- /.item -->
+                  <!-- Second slide -->
+                  <div class="item skyblue" data-ride="carousel" data-interval="5000">
+                     <div class="carousel-caption">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                           <div class="slider-contant" data-animation="animated fadeInRight">
+                              <h3> Practice<br>Make <span class="color-yellow">Perfect</span><br>For Better success!</h3>
+                              <button class="btn btn-primary btn-lg">Button</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- /.item -->
+                  <!-- Third slide -->
+                  <div class="item darkerskyblue" data-ride="carousel" data-interval="5000">
+                     <div class="carousel-caption">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                           <div class="slider-contant" data-animation="animated fadeInRight">
+                              <h3>If you Don’t Practice<br>You <span class="color-yellow">Don’t Derserve</span><br>to win!</h3>
+                              <button class="btn btn-primary btn-lg">Button</button>
+                           </div>s
+                        </div>
+                     </div>
+                  </div>
+                  <!-- /.item -->
+               </div>
+               <!-- /.carousel-inner -->
+               <!-- Controls -->
+               <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+            <!-- /.carousel -->
+            <div class="news">
+               <div class="container">
+                  <div class="heading-slider">
+                     <p class="headline"><i class="fa fa-star" aria-hidden="true"></i> Top Missions :</p>
+                     
+                     <h1>
+                     <a href="" class="typewrite" data-period="2000" data-type='[ "Oasis Foster a love for sports and healthy living.", "Oasis Encourage school retention and academic success.", "Oasis Promote values of fair play, teamwork, and respect.","Oasis Build a supportive and inclusive community."]'>
+                     <span class="wrap"></span>
+                     </a>
+                     </h1	   
+                     <span class="wrap"></span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="matchs-info">
+         <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+               <div class="full">
+                  <div class="matchs-vs">
+                     <div class="vs-team">
+                        <div class="team-btw-match">
+                           <ul>
+                              <li>
+                                 <img src="images/img-03.png" alt="">
+                                 <span>Footbal Team</span>
+                              </li>
+                              <li class="vs"><span>vs</span></li>
+                              <li>
+                                 <img src="images/img-04.png" alt="">
+                                 <span>Super Team Club</span>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+               <div class="full">
+                  <div class="right-match-time">
+                     <h2>Next Match</h2>
+                     <ul id="countdown-1" class="countdown">
+                        <li><span class="days">10 </span>Day </li>
+                        <li><span class="hours">5 </span>Hours </li>
+                        <li><span class="minutes">25 </span>Minutes </li>
+                        <li><span class="seconds">10 </span>Seconds </li>
+                     </ul>
+                     <span>12/02/2017 /19:00pm</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section id="contant" class="contant">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-sm-4 col-xs-12">
+                  <aside id="sidebar" class="left-bar">
+                     <div class="banner-sidebar">
+                        <img class="img-responsive" src="{% static 'images/team.jpg' %}" alt="#" />
+                        <h3>Meet Our Super team with many awards</h3>
+                     </div>
+                  </aside>
+                  <h4>Education</h4>
+                  <aside id="sidebar" class="left-bar">
+                     <div class="banner-sidebar">
+                        <img class="img-responsive" src="{% static 'images/education.JPG' %}" alt="#" />
+                        <h3>We support academic achievement and encourage children to stay in school, recognizing the critical role education plays in their future success</h3>
+                     </div>
+                  </aside>
+                  <h4>Cultural Heritage</h4>
+                  <aside id="sidebar" class="left-bar">
+                     <div class="banner-sidebar">
+                        <img class="img-responsive" src="{% static 'images/tradition.JPG' %}" alt="#" />
+                        <h3>We celebrate and preserve our cultural heritage through traditional dances and music, fostering a sense of pride and identity in our participants.</h3>
+                     </div>
+                  </aside>
+                   <h4>Empowerment</h4>
+                   <aside id="sidebar" class="left-bar">
+                     <div class="banner-sidebar">
+                        <img class="img-responsive" src="{% static 'images/empore.JPG' %}" alt="#" />
+                        <h3>We aim to empower children by providing them with the skills and confidence they need to succeed both on and off the field.</h3>
+                     </div>
+                  </aside>
+                  <h4>Inclusion</h4>
+                   <aside id="sidebar" class="left-bar">
+                     <div class="banner-sidebar">
+                        <img class="img-responsive" src="{% static 'images/enclusion.JPG' %}" alt="#" />
+                        <h3>We believe every child deserves the opportunity to participate in sports and recreational activities, regardless of their socioeconomic background.</h3>
+                     </div>
+                  </aside>
+               </div>
+               <div class="col-lg-8 col-sm-8 col-xs-12">
+                  <div class="news-post-holder">
+                     <div class="news-post-widget">
+                        <img class="img-responsive" src="{% static 'images/president.jpg' %}" alt="">
+                        <div class="news-post-detail">
+                           <span class="date">Oasis President</span>
+                           <h2><a href="blog-detail.html">By the strongest encouragement given by our president</a></h2>
+                           <p>The strongest encouragement and advice given by our president is there to help us succeed everywhere we are.</p>                           
+                        </div>
+                     </div>
+
+                     <div class="news-post-widget">
+                        <img class="img-responsive" src="{% static 'images/teamwork.jpg' %}" alt="">
+                        <div class="news-post-detail">
+                           <span class="date">Teamwork</span>
+                           <h2><a href="blog-detail.html">Teamwork</a></h2>
+                           <p>We foster a sense of teamwork and collaboration, teaching children the value of working together towards common goals.</p>
+                        </div>
+                     </div>
+                     
+                  </div>
+                  <div class="news-post-holder">
+                     <div class="news-post-widget">
+                        <img class="img-responsive" src="{% static 'images/cup.jpg' %}" alt="">
+                        <div class="news-post-detail">
+                           <span class="date">our team</span>
+                           <h2><a href="blog-detail.html">The Ambitions That Fuel Our Team</a></h2>
+                           <p>Our team is driven by a shared vision and passion for growth. We emphasize the importance of teamwork and collaboration, teaching children how working together towards common goals leads to collective success.</p>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="full">
+                     <div class="main-heading sytle-2">
+                        <h2>Explore Oasis Activity</h2>
+                        <p>Oasis is dedicated to promoting sports among the younger generation, fostering a love for teamwork and cooperation. Our programs are designed to help children develop their skills, build confidence, and enjoy the benefits of a healthy, active lifestyle.</p>
+                      </div>
+                                           
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="video_section_main theme-padding middle-bg vedio">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="full">
+                     <div class="match_vedio">
+                        <video width="100%" controls>
+                           <source src="{% static 'video/GORRIL_042249.mp4' %}" type="video/mp4">
+                           Your browser does not support the video tag.
+                         </video>
+                         
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="team-holder theme-padding">
+         <div class="container">
+            <div class="main-heading-holder">
+               <div class="main-heading sytle-2">
+                  <h2>Meet Your Team</h2>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br>doloremque laudantium, totam rem aperiam</p>
+               </div>
+            </div>
+            <div id="team-slider">
+               <div class="container">
+                  <div class="col-md-3">
+                     <div class="team-column style-2">
+                        <img src="{% static 'images/img-1-1.jpg' %}" alt="">
+                        <div class="player-name">
+                           <div class="desination-2">Defender</div>
+                           <h5>Charles Wheeler</h5>
+                           <span class="player-number">12</span>
+                        </div>
+                        <div class="overlay">
+                           <div class="team-detail-hover position-center-x">
+                              <p>Lacus vulputate torquent mollis venenatis quisque suspendisse fermentum primis,</p>
+                              <ul class="social-icons style-4 style-5">
+                                 <li><a class="facebook" href="#" tabindex="0"><i class="fa fa-facebook"></i></a></li>
+                                 <li><a class="twitter" href="#" tabindex="0"><i class="fa fa-twitter"></i></a></li>
+                                 <li><a class="youtube" href="#" tabindex="0"><i class="fa fa-youtube-play"></i></a></li>
+                                 <li><a class="pinterest" href="#" tabindex="0"><i class="fa fa-pinterest-p"></i></a></li>
+                              </ul>
+                              <a class="btn blue-btn" href=" /soccer/team-detail.html" tabindex="0">View Detail</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="team-column style-2">
+                        <img src="{% static 'images/img-1-2.jpg' %}" alt="">
+                        <div class="player-name">
+                           <div class="desination-2">Defender</div>
+                           <h5>Charles Wheeler</h5>
+                           <span class="player-number">12</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="team-column style-2">
+                        <img src="{% static 'images/img-1-3.jpg' %}" alt="">
+                        <div class="player-name">
+                           <div class="desination-2">Defender</div>
+                           <h5>Charles Wheeler</h5>
+                           <span class="player-number">12</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="team-column style-2">
+                        <img src="{% static 'images/img-1-4.jpg' %}" alt="">
+                        <div class="player-name">
+                           <div class="desination-2">Defender</div>
+                           <h5>Charles Wheeler</h5>
+                           <span class="player-number">12</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section id="contant" class="contant main-heading" style="padding-bottom:0;margin-bottom:-1px;position:relative;z-index:1;">
+         <div class="aboutus">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                     <div class="col-md-7 col-sm-7 col-xs-12">
+                        <div class="full">
+                           <h3>OUR Values</h3>
+                           <ul class="icon-list">
+                              <li><i class="fa fa-angle-right"></i> 1. Inclusion: </li>
+                              <li><i class="fa fa-angle-right"></i> 2. Empowerment:</li>
+                              <li><i class="fa fa-angle-right"></i> 3. Community:</li>
+                              <li><i class="fa fa-angle-right"></i> 4. Fair Play:  </li>
+                              <li><i class="fa fa-angle-right"></i> 5. Teamwork: </li>
+                              <li><i class="fa fa-angle-right"></i> 6. Cultural Heritage:</li>
+                              <li><i class="fa fa-angle-right"></i> 7. Health and Well-being: </li>
+                              <li><i class="fa fa-angle-right"></i> 8. Education: </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-md-5 col-sm-5 col-xs-12">
+                        <img class="img-responsive" src="{% static 'images/img-07.jpg' %}" alt="#" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="dark-section" style="background:url('{% static 'images/walle.jpg' %}')">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                     <div class="heading-main">
+                        <h2>Our Mission and Vision</h2>
+                     </div>
+                     <div class="testimonial-slider">
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                           <!-- Carousel Slides / Quotes -->
+                           <div class="carousel-inner text-center">
+                              <!-- Quote 1 -->
+                              <div class="item active">
+                                 <blockquote>
+                                    <div class="row">
+                                       <div class="col-sm-10 col-sm-offset-1">
+                                          <p><strong>Mission</strong><br>
+                                             Our mission at the Oasis Community Sports Center is to support children from vulnerable families by providing them with opportunities to engage in various sports and recreational activities. Through the practice of handball, volleyball, basketball, table tennis, mini football, and traditional dances and music, we aim to:
+                                             Foster a love for sports and healthy living.
+                                             Encourage school retention and academic success.
+                                             Promote values of fair play, teamwork, and respect.
+                                             Build a supportive and inclusive community. !</p>
+                                          <!-- <small>Someone famous</small> -->
+                                       </div>
+                                    </div>
+                                 </blockquote>
+                              </div>
+                              <!-- Quote 2 -->
+                              <div class="item">
+                                 <blockquote>
+                                    <div class="row">
+                                       <div class="col-sm-10 col-sm-offset-1">
+                                          
+
+                                         <p><strong>Vision</strong><br>To create a vibrant and inclusive community where all children, regardless of their background, have access to sports and recreational activities that promote physical health, personal growth, and social well-being.</p>
+                                          <!-- <small>Someone famous</small> -->
+                                       </div>
+                                    </div>
+                                 </blockquote>
+                              </div>
+                              <!-- Quote 3 -->
+                              <!-- <div class="item">
+                                 <blockquote>
+                                    <div class="row">
+                                       <div class="col-sm-10 col-sm-offset-1">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
+                                           <small>Someone famous</small> 
+                                       </div>
+                                    </div>
+                                 </blockquote>
+                              </div> -->
+                           </div>
+                           <!-- Bottom Carousel Indicators -->
+                           <!-- <ol class="carousel-indicators">
+                              <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg" alt="">
+                              </li>
+                              <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg" alt="">
+                              </li>
+                              <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                              </li>
+                           </ol> -->
+                           <!-- Carousel Buttons Next/Prev -->
+                           <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                           <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+     
+     </div>
+      <footer id="footer" class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="full">
+                     <div class="footer-widget">
+                        
+                        <p>Most of our events have hard and easy route choices as we are always keen to encourage new riders.</p>
+                        <ul class="social-icons style-4 pull-left">
+                           <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                           <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                           <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                           <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2">
+                  <div class="full">
+                     <div class="footer-widget">
+                        <h3>Menu</h3>
+                        <ul class="footer-menu">
+                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="team.html">Our Team</a></li>
+                           <li><a href="news.html">Latest News</a></li>
+                           <li><a href="matche.html">Recent Matchs</a></li>
+                           <li><a href="blog.html">Our Blog</a></li>
+                           <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="full">
+                     <div class="footer-widget">
+                        <h3>Contact us</h3>
+                        <ul class="address-list">
+                           <li><i class="fa fa-map-marker"></i> Nduba, Gasabo Rwanda</li>
+                           <li><i class="fa fa-phone"></i> +250 788 319 756</li>
+                           <li><i style="font-size:20px;top:5px;" class="fa fa-envelope"></i>Oasissport@gmail.com</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="full">
+                     <div class="contact-footer">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11459.45290763205!2d30.088124487743713!3d-1.875850349414198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca1beca50c895%3A0xa066564fb5095661!2sNyarubande%2C%20Kigali!5e0!3m2!1sen!2srw!4v1721560406441!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container">
+               <p>Copyright © 2024 Oasis Community Sports Center.All rights reserved.</p>
+            </div>
+         </div>
+      </footer>
+      <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+      <!-- ALL JS FILES -->
+      <script src="{% static 'js/all.js' %}"></script>
+      <!-- ALL PLUGINS -->
+      <script src="{% static 'js/custom.js' %}"></script>
+   </body>
+</html>

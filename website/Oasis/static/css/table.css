@@ -1,0 +1,4 @@
+.table-no-border th, 
+.table-no-border td {
+        border: none !important; /* Remove borders from table cells */
+      }
